@@ -24,13 +24,13 @@ mongoose.Promise = global.Promise;
 
 // App Setup
 app.use(cors({
-    origin: ['https://www.amazingandyyy.com', 'http://localhost:3000']
+    origin: ['https://www.amazingandyyy.com', 'http://localhost:3000', 'https://anthonyaperez.herokuapp.com']
 }));
 app.use(morgan('dev'));
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: false}));
 app.get('/ping', (req, res) => res.send('pong'))
-app.get('/', (req, res) => res.json({'source': 'https://github.com/amazingandyyy/mern'}))
+app.get('/', (req, res) => res.json({'source': 'https://github.com/anthonyaperez/anthonyaperez'}))
 app.post('/signup', Authentication.signup)
 app.post('/signin', Authentication.signin)
 app.get('/auth-ping', Middlewares.loginRequired, (req, res) => res.send('connected'))

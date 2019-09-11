@@ -3497,7 +3497,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__types__ = __webpack_require__(51);
 
 
-const ROOT_URL = "https://warm-bayou-86769.herokuapp.com" || 'http://localhost:8000';
+const ROOT_URL = "https://anthonyaperez.herokuapp.com" || 'http://localhost:8000';
 
 __WEBPACK_IMPORTED_MODULE_0_axios___default.a.defaults.baseURL = ROOT_URL;
 if (localStorage.getItem('auth_jwt_token')) {

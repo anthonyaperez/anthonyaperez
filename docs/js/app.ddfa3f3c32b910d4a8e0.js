@@ -3511,7 +3511,7 @@ function signUserIn(data) {
         __WEBPACK_IMPORTED_MODULE_0_axios___default.a.post(`/signin`, data).then(res => {
             dispatch({ type: __WEBPACK_IMPORTED_MODULE_1__types__["b" /* AUTH_USER */] });
             localStorage.setItem('auth_jwt_token', res.data.token);
-            window.location = '/#account';
+            window.location = 'anthonyaperez/#account';
             __WEBPACK_IMPORTED_MODULE_0_axios___default.a.defaults.headers.common['Authorization'] = localStorage.getItem('auth_jwt_token');
         }).catch(error => {
             console.log(error);
@@ -3526,7 +3526,7 @@ function signUserUp(userObj) {
         __WEBPACK_IMPORTED_MODULE_0_axios___default.a.post(`/signup`, userObj).then(res => {
             dispatch({ type: __WEBPACK_IMPORTED_MODULE_1__types__["b" /* AUTH_USER */] });
             localStorage.setItem('auth_jwt_token', res.data.token);
-            window.location = '/#account';
+            window.location = 'anthonyaperez/#account';
             __WEBPACK_IMPORTED_MODULE_0_axios___default.a.defaults.headers.common['Authorization'] = localStorage.getItem('auth_jwt_token');
         }).catch(error => {
             console.log(error);

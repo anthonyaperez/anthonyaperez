@@ -24,7 +24,7 @@ mongoose.Promise = global.Promise;
 
 // App Setup
 app.use(cors({
-    origin: ['https://www.amazingandyyy.com', 'http://localhost:3000', 'https://anthonyaperez.herokuapp.com']
+    origin: ['https://anthonyaperez.github.io', 'http://localhost:3000', 'https://anthonyaperez.herokuapp.com']
 }));
 app.use(morgan('dev'));
 app.use(bodyParser.json())
